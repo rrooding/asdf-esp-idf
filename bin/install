@@ -7,6 +7,8 @@ install_esp_idf() {
 
   git clone -b $version --recursive https://github.com/espressif/esp-idf.git $install_path
 
+  export IDF_TOOLS_PATH=$install_path/espressif
+
   python -m pip install --user -r $install_path/requirements.txt 
   cd $install_path && ./install.sh
 }
