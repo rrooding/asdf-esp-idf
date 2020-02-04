@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
+export IDF_PATH=$ASDF_INSTALL_PATH
 . $ASDF_INSTALL_PATH/export.sh
