@@ -6,6 +6,8 @@ install_esp_idf() {
   local install_path="$3"
 
   git clone -b $version --recursive https://github.com/espressif/esp-idf.git $install_path
+
+  cd $install_path && ./install.sh
 }
 
 install_esp_idf "$ASDF_INSTALL_TYPE" "$ASDF_INSTALL_VERSION" "$ASDF_INSTALL_PATH"
